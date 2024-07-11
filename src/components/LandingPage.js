@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 import "../style/landingStyle.css";
 import CronosLogo from "../assets/CronosLogo.png";
 import send from "../assets/send.png";
@@ -90,7 +91,7 @@ function LandingPage() {
       <nav>
         <img src={CronosLogo} alt="" style={{ width: '60px', height: '60px' }} />
         <div className="nav-center">
-          <a href="Admin">ADMIN</a>
+          <Link to="/admin">ADMIN</Link>
         </div>
       </nav>
       <div className="one">
@@ -121,9 +122,9 @@ function LandingPage() {
       </div>
       <div className="three">
         <div className="lft-three">
-        <h1>Téléchargez la nouvelle application Cronos !</h1>
+          <h1>Téléchargez la nouvelle application Cronos !</h1>
           <p>
-            Scannez ces QR codes pour télécharger Cronos sur Android et iOS.
+            Scannez ce QR code pour télécharger Cronos sur Android et iOS.
           </p>
         </div>
         <div className="rght-three">

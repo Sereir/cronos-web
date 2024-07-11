@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
 .admin-panel {
     padding: 20px;
+    font-family: "Quicksand", sans-serif;
   }
   
   .panel-title {
@@ -34,4 +37,3 @@
     margin-top: 10px;
     margin-bottom: 10px;
   }
-  
