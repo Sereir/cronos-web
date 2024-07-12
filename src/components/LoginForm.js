@@ -7,7 +7,7 @@ const LoginForm = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        navigate('/panel');
+        navigate('/admin/*');
     };
 
     return (

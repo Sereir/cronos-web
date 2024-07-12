@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const PostTable = ({ posts, deletePost }) => {
   return (
@@ -6,19 +6,24 @@ const PostTable = ({ posts, deletePost }) => {
       <thead>
         <tr>
           <th className="table-header">ID</th>
-          <th className="table-header">Titre</th>
+          <th className="table-header">Utilisateur</th>
           <th className="table-header">Contenu</th>
           <th className="table-header">Supprimer</th>
         </tr>
       </thead>
       <tbody>
-        {posts.map(post => (
+        {posts.data.map((post) => (
           <tr key={post.id}>
             <td>{post.id}</td>
-            <td>{post.title}</td>
+            <td>{post.user.username}</td>
             <td>{post.content}</td>
             <td>
-              <button className="delete-button" onClick={() => deletePost(post.id)}>Supprimer</button>
+              <button
+                className="delete-button"
+                onClick={() => deletePost(post.id)}
+              >
+                Supprimer
+              </button>
             </td>
           </tr>
         ))}
